@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "rag-knowledge": {
+      "command": "python",
+      "args": [
+        "-m",
+        "app.mcp_server"
+      ],
+      "cwd": "/home/chm/rag_agent_study/Rag_System/backend",
+      "env": {
+        "PYTHONPATH": "/home/chm/rag_agent_study/Rag_System/backend"
+      }
+    }
+  }
+}

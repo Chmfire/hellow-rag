@@ -1,0 +1,33 @@
+[run]
+source = 
+    app/
+    agents/
+omit =
+    */tests/*
+    */test_*.py
+    */__pycache__/*
+    */migrations/*
+    */node_modules/*
+
+[report]
+show_missing = True
+skip_covered = False
+precision = 2
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    raise AssertionError
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    if TYPE_CHECKING:
+    @abstractmethod
+    if typing.TYPE_CHECKING:
+    if False:
+    if DEBUG:
+    pragma: no cover
+
+[html]
+directory = htmlcov
+
+[xml]
+output = coverage.xml
